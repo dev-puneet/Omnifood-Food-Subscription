@@ -1,0 +1,70 @@
+/* DESIGN DECISIONS
+
+--- 1.TYPOGRAPHY
+
+--FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--FONT-WEIGHT
+Default : 400
+
+--LINE-HEIGHT
+Default:1
+
+
+---2. COLORS
+
+--Primary color
+ #e67e22
+
+ --Tints
+
+ --Shades
+
+ --Accent
+ 
+ --Grey
+ #555
+
+
+
+---3.IMAGES
+
+
+
+
+---4.ICONS
+
+
+
+
+---5.SHADOWS
+
+
+
+
+---6.BORDER-RADIUS
+
+
+
+
+---7.WHITESPACE
+
+--SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #555;
+  font-weight: 400;
+  line-height: 1;
+}
