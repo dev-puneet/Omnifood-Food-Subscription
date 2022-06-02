@@ -226,7 +226,7 @@
   transition: all 0.4s;
 }
 
-.meal:hover{
+.meal:hover {
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
   /* transform: translateY(-1.2rem) ; */
   transform: translateY(-1.2rem);
@@ -294,42 +294,197 @@
   color: #e67e22;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  list-style: none;
-}
-
-.list-item {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  height: 3.2rem;
-  width: 3.2rem;
-  color: #e67e22;
-}
-
 .list-menu {
   font-size: 1.8rem;
 }
 
-.center--text{
+.center--text {
   text-align: center;
 }
 
-.all-recipes-link:link , .all-recipes-link:visited{
-font-size: 2rem;
-text-decoration:none;
-color: #e67e22;
-border-bottom: 1px solid currentColor;
-transition: all 0.3s;
+.all-recipes-link:link,
+.all-recipes-link:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
 }
 
-.all-recipes-link:hover, .all-recipes-link:active{
+.all-recipes-link:hover,
+.all-recipes-link:active {
   border-bottom: 1px solid transparent;
   color: #cf711f;
+}
+
+/************************************/
+/* TESTIMONIALS & PHOTO GALLERY*?
+/************************************/
+
+.testimonial-section {
+  background-color: #fdf2e9;
+  /* padding: 9.8rem 0; */
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-block {
+  padding: 9.8rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimony-img {
+  display: inline-block;
+  height: 5.2rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+.testimony-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimony-author {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.photo {
+  overflow: hidden;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.photo img:hover {
+  transform: scale(1.1);
+}
+
+.section-pricing {
+  padding: 9.8rem 0;
+}
+
+.pricing-plan {
+  width: 75%;
+  border-radius: 11px;
+  
+}
+
+.pricing-plan--starter{
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+  
+}
+
+.pricing-plan--complete{
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+  padding: 4.8rem;
+}
+
+.pricing-plan--complete::after{
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: absolute;
+  content: 'Best Value';
+  text-transform: uppercase;
+  background-color: #ffe066;
+  color: #333;
+  padding: 0.8rem 8rem;
+  top: 7%;
+  right: -18%;
+  transform: rotate(45deg);
+
+}
+
+
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  font-size: 2rem;
+  color: #cf711f;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  letter-spacing: 0.75px;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  margin-right: 0.8rem;
+  font-weight: 500;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.sign-up-link {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.grid:not(:last-child){
+  margin-bottom: 9.6rem;
+}
+
+.feature-icon{
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #e67e22;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.feature-heading{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.feature-description{
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.price-info{
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
