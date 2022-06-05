@@ -28,6 +28,7 @@ Paragraph:1.10
 
  --Shades 
  #cf711f
+ #45260a
  
 
  --Accent
@@ -143,6 +144,7 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -152,6 +154,11 @@ body {
   text-decoration: none;
   /* Put transition on original "state" */
   transition: background-color 0.3s;
+
+
+  /* only for btn */
+  border:none;
+  cursor: pointer;
 }
 
 .btn--full:link,
@@ -206,4 +213,11 @@ strong {
   height: 3.2rem;
   width: 3.2rem;
   color: #e67e22;
+}
+
+*:focus{
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 4px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
